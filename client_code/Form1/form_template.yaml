@@ -16,6 +16,11 @@ components:
   name: rich_text_1
   properties: {content: Aasafsf asf afa sdfasdfdsa}
   type: RichText
+- components: []
+  layout_properties: {slot: left-nav}
+  name: column_panel_2
+  properties: {}
+  type: ColumnPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

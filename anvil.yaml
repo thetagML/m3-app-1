@@ -1,6 +1,12 @@
 allow_embedding: false
 dependencies: []
 name: M3 App 1
+native_deps:
+  head_html: |-
+    <!-- Main Quill library -->
+    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+    <!-- Theme included stylesheets -->
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 package_name: M3_App_1
 renamed: true
 runtime_options:
@@ -8,5 +14,8 @@ runtime_options:
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
   version: 2
-services: []
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
 startup_form: Form1

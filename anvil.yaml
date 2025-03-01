@@ -14,6 +14,10 @@ runtime_options:
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
   version: 2
+secrets:
+  xxx:
+    type: secret
+    value: {QWXHGJJVQRGIILTJ: TRuJrHmViwMuWMUA+mvCLokF8HgcXWFxuuzvHg1+YXjfBtiLYDtME/3EfmoVldSOCYCezll7Hv8/ZRtowE+sRqG6YqW/qSQKR/r+tfJfqlapaHL3rqLGVtRdK0btBXOLlWU=}
 services:
 - client_config: {}
   server_config: {}
@@ -21,4 +25,7 @@ services:
 - client_config: {}
   server_config: {custom_smtp: true}
   source: /runtime/services/anvil/email.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
 startup_form: Form1

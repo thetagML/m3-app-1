@@ -1,4 +1,5 @@
 allow_embedding: false
+db_schema: {}
 dependencies: []
 name: M3 App 1
 native_deps:

@@ -23,3 +23,9 @@ class Form1(Form1Template):
         
     def text_change(self, delta, old_delta, source):
         print(source, self.quill.getText())
+
+    def form_show(self, **event_args):
+        """This method is called when the HTML panel is shown on the screen"""
+        jQuery( ".app-bar" ).css( "top", "0px" )
+        jQuery( ".content" ).css( "margin-top", "9px" )
+    

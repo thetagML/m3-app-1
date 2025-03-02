@@ -28,4 +28,4 @@ class Form1(Form1Template):
         """This method is called when the HTML panel is shown on the screen"""
         jQuery( ".app-bar" ).css( "top", "0px" )
         jQuery( ".content" ).css( "margin-top", "9px" )
-    
+
